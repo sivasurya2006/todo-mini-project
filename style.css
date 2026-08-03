@@ -1,1 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, #22c55e 0, transparent 28%),
+    radial-gradient(circle at bottom right, #06b6d4 0, transparent 30%),
+    #111827;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px 16px;
+  color: #f9fafb;
+}
+
+.todo-container {
+  width: 420px;
+  background: rgba(17, 24, 39, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+}
+
+h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 13px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  outline: none;
+}
+
+#taskInput::placeholder {
+  color: #9ca3af;
+}
+
+#taskInput:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
+}
+
+#addBtn {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #22c55e, #06b6d4);
+  color: #06121f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  transform: translateY(-1px);
+}
+
+#warning {
+  color: #fca5a5;
+  font-size: 14px;
+  min-height: 20px;
+  margin-bottom: 4px;
+}
+
+#count {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.09);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#taskList li span {
+  flex: 1;
+  color: #f9fafb;
+}
+
+.done,
+.delete {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.done {
+  background: #22c55e;
+}
+
+.delete {
+  background: #ef4444;
+}
+
+.done:hover,
+.delete:hover {
+  opacity: 0.85;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #9ca3af !important;
+}
 
