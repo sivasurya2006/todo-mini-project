@@ -111,7 +111,7 @@ This project helped strengthen my understanding of:
 * Working with the Document Object Model (DOM)
 * Handling user interactions using JavaScript
 * Updating the UI dynamically
-* Writing clean and maintainable frontend code
+* Writing clean and maintainable front-end code
 
 ---
 
